@@ -1,12 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Document</title>
 </head>
 <body>
-    noor muhammad
+  <section class="showcase">
+    <header>
+      <h2 class="Logo">Travel</h2>
+      <div class="toggle"></div>
+    </header>
+    <video src="./assests/video.1.mp4" muted loop autoplay></video>
+    <div class="overlay"></div>
+    <div class="text">
+      <h2>Never Stop</h2>
+      <h3>Exploring The World</h3>
+      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Obcaecati dignissimos hic repudiandae tempora 
+        dolore quae provident deleniti asperiores deserunt?Ad?</p>
+         <a href="#">Explore</a>
+    </div>
+    <ul class="social">
+     <li><a href="#"><img class="icons" src="./assests/facebook.png" alt=""></a></li>
+     <li><a href="#"><img class="icon" src="./assests/Twitter.png" alt=""></a></li>
+     <li><a href="#"><img class="inst" src="./assests/Instagram.png" alt=""></a></li>
+    </ul>
+  </section>
+  <div class="menu">
+    <header>Menu</header>
+    <ul>
+      <li><a href="./index.html"><img class="home" src="./assests/home.png">Home</a></li>
+      <li><a href="./news.html"><img class="news" src="./assests/news.png">News</a></li>
+      <li><a href="./destination.html"><img class="dest" src="./assests/destination.png">Destination</a></li>
+      <li><a href="./blog.html"><img class="blog" src="./assests/blog.png">Blog</a></li>
+      <li><a href="./contact.html"><img class="cont" src="./assests/contact.png">Contact</a></li>
+    </ul>
+  </div>
+  <script>
+    const menuToggle = document.querySelector('.toggle')
+    const showcase = document.querySelector('.showcase')
+    const menu = document.querySelector('.menu')
+
+    menuToggle.addEventListener('click', () => {
+      menuToggle.classList.toggle('active')
+      showcase.classList.toggle('active')
+      menu.classList.toggle('active')
+    })
+  </script>
 </body>
 </html>
